@@ -22,9 +22,8 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".DisplayActivity" />
         <activity android:name=".DisplayList" />
-        <activity android:name=".About">
-
-        </activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".MyProfile"></activity>
     </application>
 
 </manifest>

@@ -70,6 +70,9 @@ public class SearchActivity extends AppCompatActivity {
                 startActivity(new Intent(SearchActivity.this,About.class));
                 return true;
             case R.id.profile:
+                Intent profile=new Intent(SearchActivity.this,MyProfile.class);
+                profile.putExtra("roll",user_roll);
+                startActivity(profile);
 
                 return true;
             default:

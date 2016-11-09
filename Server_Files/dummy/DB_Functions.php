@@ -39,6 +39,28 @@ class DB_Functions {
             return false;
         }
     }
+	
+	 public function UpdateUser($name,$roll,$phone,$email) {
+		 $none="none";
+        $stmt = $this->conn->prepare("UPDATE students SET name=?,phone=?,email=?,verified_by=? WHERE roll=?");
+        $stmt->bind_param("sssss", $name, $phone, $email,$none, $roll);
+        $result = $stmt->execute();
+        $stmt->close();
+		
+       
+        if ($result) {
+			
+            $stmt = $this->conn->prepare("SELECT * FROM students WHERE roll = ?");
+            $stmt->bind_param("s", $roll);
+            $stmt->execute();
+            $user = $stmt->get_result()->fetch_assoc();
+            $stmt->close();
+ 
+            return $user;
+        } else {
+            return false;
+        }
+    }
  
     public function getUserByRollAndPassword($roll, $password) {
  

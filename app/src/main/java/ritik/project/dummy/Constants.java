@@ -12,6 +12,7 @@ public static String TAG="Ritik";
     public static String URL_LOGIN="http://"+SERVER_IP+"/dummy/login.php";
     public static String URL_SEARCH_LIST="http://"+SERVER_IP+"/dummy/search_list.php";
     public static String URL_VERIFY="http://"+SERVER_IP+"/dummy/verify.php";
+    public static String URL_MYPROFILE="http://"+SERVER_IP+"/dummy/myprofile.php";
     public static String CONTACT_EMAIL="chnritik@gmail.com";
     public static String CONTACT_EMAIL_SUBJECT="Reporting Entry in Database";
 

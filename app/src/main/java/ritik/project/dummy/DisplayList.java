@@ -29,7 +29,7 @@ import java.util.Map;
 public class DisplayList extends AppCompatActivity {
     private String query1="null1234";
     private String query2="null1234";
-    private String user_verified="none";
+
     private String user_roll;
     private List<student> studentList = new ArrayList<student>();
 
@@ -58,7 +58,7 @@ public class DisplayList extends AppCompatActivity {
         if (extras != null) {
             query1 = extras.getString("query1");
             query2=extras.getString("query2");
-            user_verified=extras.getString("user_verified");
+
             user_roll=extras.getString("user_roll");
         }
         new GetStudents().execute(query1,query2);
