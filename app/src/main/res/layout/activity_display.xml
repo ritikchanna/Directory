@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ritik.project.dummy.DisplayActivity">
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Disp_name"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:text="Roll No."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Disp_roll"
+        android:elevation="0dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal|italic"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/Disp_name" />
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Disp_phone"
+		android:autoLink="phone"
+
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/Disp_roll"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/avatar"
+        android:id="@+id/imageView"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Disp_email"
+        android:autoLink="email"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="italic"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/Disp_phone"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        app:srcCompat="@drawable/icn_verified"
+        android:id="@+id/img_verifiedv"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="invisible" />
+
+</android.support.constraint.ConstraintLayout>
